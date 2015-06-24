@@ -18,7 +18,7 @@ int mul(int a, int b){ return a*b; }
  *  so we are telling the function what kind of function we are passing along its paramaters
 */
 int do_math(int (*function_pointer)(int,int), // <= function pointer (google it!) 
-		    int a, int b)                     // <= the arguments that we use and calculate
+		    int a, int b) // <= the arguments that we use and calculate
 {
   // we just execute the function that we pass and save its result
   int result = function_pointer(a,b);
